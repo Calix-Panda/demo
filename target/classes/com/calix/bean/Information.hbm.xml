@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019/10/26 ?U?? 04:25:37 by Hibernate Tools 4.3.5.Final -->
+<hibernate-mapping>
+    <class name="com.calix.bean.Information" table="information" schema="dbo" catalog="TestDB" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="title" type="string">
+            <column name="title" length="64" />
+        </property>
+        <property name="content" type="string">
+            <column name="content" length="1024" />
+        </property>
+        <property name="publishtime" type="timestamp">
+            <column name="publishtime" length="23" />
+        </property>
+        <property name="deadlinetime" type="timestamp">
+            <column name="deadlinetime" length="23" />
+        </property>
+        <property name="publishuser" type="string">
+            <column name="publishuser" length="64" />
+        </property>
+    </class>
+</hibernate-mapping>
