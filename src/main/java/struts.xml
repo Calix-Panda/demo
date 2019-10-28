@@ -43,24 +43,28 @@
 		<action name="add" class="com.calix.action.InformationAction"
 			method="addInfo">
 			<result name="success" type="dispatcher">/index.jsp</result>
+			<result name="input" type="dispatcher">/index.jsp</result>
 		</action>
 
 		<!-- 刪除整串 -->
 		<action name="deleteByID"
 			class="com.calix.action.InformationAction" method="deleteByID">
 			<result name="success" type="dispatcher">/index.jsp</result>
+			<result name="input" type="dispatcher">/index.jsp</result>
 		</action>
 		
 		<!-- 刪除 -->
 		<action name="removeByID"
 			class="com.calix.action.InformationAction" method="removeByID">
 			<result name="success" type="dispatcher">/index.jsp</result>
+			<result name="input" type="dispatcher">/index.jsp</result>
 		</action>
 		
 		<!-- 更新 -->
 		<action name="updateInfo"
 			class="com.calix.action.InformationAction" method="updateInfo">
 			<result name="success" type="dispatcher">index.jsp</result>
+			<result name="input" type="dispatcher">/index.jsp</result>
 		</action>
 		
 		<!-- 編輯 -->

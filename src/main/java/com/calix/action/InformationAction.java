@@ -92,7 +92,7 @@ public class InformationAction extends ActionSupport {
 	public String updateInfo() throws Exception {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd", Locale.TRADITIONAL_CHINESE);
 		information.setPublishtime(date);
-         System.out.println(getInformation());  
+        System.out.println(getInformation());  
         try {  
               
              dao.updateInfo(information);  
