@@ -3,7 +3,7 @@
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <!-- Generated 2019/10/26 ?U?? 04:25:37 by Hibernate Tools 4.3.5.Final -->
 <hibernate-mapping>
-    <class name="com.calix.bean.Information" table="information" schema="dbo" catalog="demo" optimistic-lock="version">
+    <class name="com.calix.bean.Information" table="information" schema="dbo" catalog="TestDB" optimistic-lock="version">
         <id name="id" type="java.lang.Integer">
             <column name="id" />
             <generator class="identity" />
